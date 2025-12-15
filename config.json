@@ -29,16 +29,6 @@
       "levelpoints": "Niveaupoint",
       "tier": "Medlemsniveau",
       "tiers": { "M": "Medlem", "S": "Sølv", "G": "Guld", "D": "Diamant", "P": "Pandion" }
-    },
-    "en": {
-      "class": "Class",
-      "bonus": "Bonus",
-      "level": "Level",
-      "points": "Points",
-      "bonuspoints": "Bonus points",
-      "levelpoints": "Level points",
-      "tier": "Membership tier",
-      "tiers": { "M": "Member", "S": "Silver", "G": "Gold", "D": "Diamond", "P": "Pandion" }
     }
   },
   "carrierAlias": {
