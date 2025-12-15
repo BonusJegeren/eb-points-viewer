@@ -1,0 +1,95 @@
+#ebpv-tier-form {
+  margin-right: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+#ebpv-tier-form .sorting-text {
+  margin: 0;
+  white-space: nowrap;
+}
+
+#ebpv-tier-form .ebpv-selected-value {
+  font-weight: bold;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#ebpv-tier-text {
+  border-radius: 10px;
+  padding: 1px 8px;
+  margin-right: 2px;
+}
+
+#ebpv-tier-select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  appearance: none;
+  border: none;
+}
+
+.ebpv-points {
+  font-size: 11px;
+  color: var(--color-blue-4);
+  font-weight: bold;
+  margin-top: 1px;
+  line-height: 1.2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ebpv-points span {
+  color: var(--color-text);
+}
+
+.ebpv-info-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.ebpv-info-icon:hover {
+  color: blue;
+  fill: blue;
+}
+
+li[product-detail-card-layout] {
+  position: relative;
+}
+
+li:has(.ebpv-info-icon:hover) .ebpv-tooltip,
+li:has(.ebpv-tooltip:hover) .ebpv-tooltip {
+  display: block;
+}
+
+.ebpv-tooltip {
+  position: absolute;
+  bottom: 52px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 6px;
+  z-index: 1000;
+  display: none;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  color: var(--color-text);
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.ebpv-tooltip table td,
+.ebpv-tooltip table th {
+  padding: var(--margin-half);
+}
