@@ -1,0 +1,885 @@
+{
+  "translations": {
+    "no": {
+      "class": "Klasse",
+      "bonus": "Bonus",
+      "level": "Nivå",
+      "points": "Poeng",
+      "bonuspoints": "Bonuspoeng",
+      "levelpoints": "Nivåpoeng",
+      "tier": "Medlemsnivå",
+      "tiers": { "M": "Medlem", "S": "Sølv", "G": "Gull", "D": "Diamant", "P": "Pandion" }
+    },
+    "sv": {
+      "class": "Klass",
+      "bonus": "Bonus",
+      "level": "Nivå",
+      "points": "Poäng",
+      "bonuspoints": "Bonuspoäng",
+      "levelpoints": "Nivåpoäng",
+      "tier": "Medlemsnivå",
+      "tiers": { "M": "Medlem", "S": "Silver", "G": "Guld", "D": "Diamant", "P": "Pandion" }
+    },
+    "da": {
+      "class": "Klasse",
+      "bonus": "Bonus",
+      "level": "Niveau",
+      "points": "Point",
+      "bonuspoints": "Bonuspoint",
+      "levelpoints": "Niveaupoint",
+      "tier": "Medlemsniveau",
+      "tiers": { "M": "Medlem", "S": "Sølv", "G": "Guld", "D": "Diamant", "P": "Pandion" }
+    },
+    "en": {
+      "class": "Class",
+      "bonus": "Bonus",
+      "level": "Level",
+      "points": "Points",
+      "bonuspoints": "Bonus points",
+      "levelpoints": "Level points",
+      "tier": "Membership tier",
+      "tiers": { "M": "Member", "S": "Silver", "G": "Gold", "D": "Diamond", "P": "Pandion" }
+    }
+  },
+  "carrierAlias": {
+    "SK": ["SAS", "SCANDINAVIAN AIRLINES", "SCANDINAVIAN AIRLINES SYSTEM", "SAS LINK", "SAS CONNECT"],
+    "WX": ["CITYJET"],
+    "EE": ["XFLY", "REGIONAL JET"],
+    "TF": ["BRA", "BRAATHENS", "BRAATHENS REGIONAL", "BRAATHENS REGIONAL AIRLINES"],
+    "DX": ["DAT", "DANISH AIR TRANSPORT"],
+    "JO": ["JETTIME"],
+    "FI": ["ICELANDAIR"],
+    "GL": ["AIR GREENLAND"],
+    "BT": ["AIR BALTIC"],
+    "AF": ["AIR FRANCE"],
+    "KL": ["KLM", "KLM ROYAL DUTCH AIRLINES"],
+    "DL": ["DELTA AIR LINES", "DELTA"],
+    "VS": ["VIRGIN ATLANTIC", "VIRGIN"],
+    "AM": ["AEROMEXICO"],
+    "AR": ["AEROLINEAS ARGENTINAS", "AEROLINEAS"],
+    "GA": ["GARUDA INDONESIA", "GARUDA"],
+    "KE": ["KOREAN AIR", "KOREAN AIRLINES"],
+    "KQ": ["KENYA AIRWAYS"],
+    "ME": ["MEA", "MIDDLE EAST AIRLINES"],
+    "MF": ["XIAMEN AIR", "XIAMEN AIRLINES"],
+    "CI": ["CHINA AIRLINES"],
+    "MU": ["CHINA EASTERN"],
+    "RO": ["TAROM", "TRANSPORTURILE AERIENE ROMANE"],
+    "SV": ["SAUDIA", "SAUDI ARABIAN AIRLINES"],
+    "UX": ["AIR EUROPA", "AIR EUROPA LINEAS AEREAS"],
+    "VN": ["VIETNAM AIRLINES"],
+    "WS": ["WESTJET"],
+    "EY": ["ETIHAD", "ETIHAD AIRWAYS"],
+    "SQ": ["SINGAPORE AIRLINES"]
+  },
+  "classMap": {
+    "SQ": {
+      "D": "J",
+      "J": "D"
+    }
+  },
+  "ebSchemes": {
+    "skyteam": ["AF", "AM", "AR", "DL", "UX", "VS", "KL", "KQ", "KE", "CI", "MU", "GA", "ME", "SV", "RO", "VN", "MF"],
+    "wetlease": ["WX", "TF", "EE", "SL", "X1", "DX", "JO", "FI"],
+    "status": {
+      "M": 0,
+      "S": 0.25,
+      "G": 0.5,
+      "D": 0.75,
+      "P": 1
+    },
+    "carriers": {
+      "AF": {
+        "min": 500,
+        "level": true,
+        "tables": {
+          "LONG": [
+            {
+              "classes": ["P", "F"],
+              "Md": 100,
+              "Mc": 200
+            },
+            {
+              "classes": ["J", "C"],
+              "Md": 100,
+              "Mc": 100
+            },
+            {
+              "classes": ["D", "I"],
+              "Md": 100,
+              "Mc": 50
+            },
+            {
+              "classes": ["Z", "W", "S"],
+              "Md": 100,
+              "Mc": 25
+            },
+            {
+              "classes": ["O", "A", "Y", "B", "M"],
+              "Md": 100,
+              "Mc": 0
+            },
+            {
+              "classes": ["U", "K", "H"],
+              "Md": 50,
+              "Mc": 0
+            },
+            {
+              "classes": ["L", "Q", "T", "E", "N"],
+              "Md": 25,
+              "Mc": 0
+            },
+            {
+              "classes": ["R", "V", "G", "X"],
+              "Md": 20,
+              "Mc": 0
+            }
+          ],
+          "MEDIUM": [
+            {
+              "classes": ["J", "C"],
+              "Md": 100,
+              "Mc": 100
+            },
+            {
+              "classes": ["D", "I"],
+              "Md": 100,
+              "Mc": 50
+            },
+            {
+              "classes": ["Z"],
+              "Md": 100,
+              "Mc": 25
+            },
+            {
+              "classes": ["O", "Y", "B", "M"],
+              "Md": 100,
+              "Mc": 0
+            },
+            {
+              "classes": ["P", "U", "F", "K", "W", "H"],
+              "Md": 50,
+              "Mc": 0
+            },
+            {
+              "classes": ["S", "L", "A", "Q", "T", "E", "N"],
+              "Md": 25,
+              "Mc": 0
+            },
+            {
+              "classes": ["R", "V", "G", "X"],
+              "Md": 20,
+              "Mc": 0
+            }
+          ]
+        },
+        "tableRules": [
+          {
+            "use": "MEDIUM",
+            "regions": ["EU"],
+            "countries": ["DZ", "MA", "TN", "TR", "AM", "GE"],
+            "matchMode": "BOTH"
+          },
+          {
+            "use": "MEDIUM",
+            "maxDist": 2000
+          },
+          {
+            "use": "LONG"
+          }
+        ]
+      },
+      "AM": {
+        "level": true,
+        "table": [
+          {
+            "classes": ["J", "C", "D", "I"],
+            "Md": 100,
+            "Mc": 50
+          },
+          {
+            "classes": ["W", "Y", "B", "M"],
+            "Md": 100,
+            "Mc": 25
+          },
+          {
+            "classes": ["N", "R", "H", "K", "U", "E", "L", "Q", "T"],
+            "Md": 50,
+            "Mc": 0
+          },
+          {
+            "classes": ["V"],
+            "Md": 10,
+            "Mc": 0
+          }
+        ]
+      },
+      "AR": {
+        "level": true,
+        "table": [
+          {
+            "classes": ["J", "C"],
+            "Md": 150,
+            "Mc": 50
+          },
+          {
+            "classes": ["D", "I", "W", "S"],
+            "Md": 125,
+            "Mc": 25
+          },
+          {
+            "classes": ["Y", "B"],
+            "Md": 100,
+            "Mc": 0
+          },
+          {
+            "classes": ["M", "U", "K", "H", "L", "Q"],
+            "Md": 50,
+            "Mc": 0
+          },
+          {
+            "classes": ["T", "E", "V", "N"],
+            "Md": 25,
+            "Mc": 0
+          }
+        ]
+      },
+      "UX": {
+        "level": true,
+        "table": [
+          {
+            "classes": ["J", "C"],
+            "Md": 100,
+            "Mc": 50
+          },
+          {
+            "classes": ["D", "I"],
+            "Md": 100,
+            "Mc": 25
+          },
+          {
+            "classes": ["F"],
+            "Md": 100,
+            "Mc": 10
+          },
+          {
+            "classes": ["Y", "B", "M"],
+            "Md": 100,
+            "Mc": 0
+          },
+          {
+            "classes": ["L", "E", "K"],
+            "Md": 50,
+            "Mc": 0
+          },
+          {
+            "classes": ["V", "H", "S", "R"],
+            "Md": 25,
+            "Mc": 0
+          },
+          {
+            "classes": ["T", "Q", "P", "A", "N", "Z", "U"],
+            "Md": 10,
+            "Mc": 0
+          }
+        ]
+      },
+      "KL": {
+        "ref": "AF"
+      },
+      "DL": {
+        "level": true,
+        "table": [
+          {
+            "classes": ["F"],
+            "Md": 100,
+            "Mc": 200
+          },
+          {
+            "classes": ["J", "C"],
+            "Md": 100,
+            "Mc": 100
+          },
+          {
+            "classes": ["D", "I", "Z", "P", "A", "G"],
+            "Md": 100,
+            "Mc": 25
+          },
+          {
+            "classes": ["W", "S", "Y", "B", "M"],
+            "Md": 100,
+            "Mc": 0
+          },
+          {
+            "classes": ["H", "Q", "K", "L", "U"],
+            "Md": 50,
+            "Mc": 0
+          },
+          {
+            "classes": ["T", "X", "V"],
+            "Md": 10,
+            "Mc": 0
+          }
+        ]
+      },
+      "EY": {
+        "level": false,
+        "table": [
+          {
+            "classes": ["P"],
+            "Md": 400
+          },
+          {
+            "classes": ["A", "F"],
+            "Md": 275
+          },
+          {
+            "classes": ["J"],
+            "Md": 200
+          },
+          {
+            "classes": ["C", "D"],
+            "Md": 175
+          },
+          {
+            "classes": ["W"],
+            "Md": 130
+          },
+          {
+            "classes": ["Z"],
+            "Md": 125
+          },
+          {
+            "classes": ["B", "Y"],
+            "Md": 100
+          },
+          {
+            "classes": ["H", "K", "M", "Q"],
+            "Md": 75
+          },
+          {
+            "classes": ["E", "G", "L", "U", "V"],
+            "Md": 50
+          },
+          {
+            "classes": ["T"],
+            "Md": 25
+          }
+        ]
+      },
+      "VS": {
+        "level": true,
+        "table": [
+          {
+            "classes": ["J", "C", "D", "I", "Z", "W", "S"],
+            "Md": 100,
+            "Mc": 100
+          },
+          {
+            "classes": ["H", "K"],
+            "Md": 100,
+            "Mc": 0
+          },
+          {
+            "classes": ["V", "Y", "B", "R"],
+            "Md": 100,
+            "Mc": 50
+          },
+          {
+            "classes": ["L", "U", "M"],
+            "Md": 100,
+            "Mc": 0
+          },
+          {
+            "classes": ["O", "N", "X", "Q", "E"],
+            "Md": 50,
+            "Mc": 0
+          },
+          {
+            "classes": ["T"],
+            "Md": 25,
+            "Mc": 0
+          }
+        ]
+      },
+      "SQ": {
+        "level": true,
+        "table": [
+          {
+            "classes": ["A", "C", "F", "J", "Z"],
+            "Md": 200
+          },
+          {
+            "classes": ["D", "U"],
+            "Md": 150
+          },
+          {
+            "classes": ["S", "T"],
+            "Md": 125
+          },
+          {
+            "classes": ["B", "E", "L", "P", "R", "Y"],
+            "Md": 100
+          },
+          {
+            "classes": ["H", "M", "W"],
+            "Md": 75
+          },
+          {
+            "classes": ["K", "N", "Q", "V"],
+            "Md": 50
+          }
+        ]
+      },
+      "SK": {
+        "tables": {
+          "DOMESTIC": [
+            {
+              "type": "LIGHT",
+              "classes": ["E", "H", "K", "L", "M", "N", "O", "Q", "R", "T", "U", "V", "W"],
+              "level": 100,
+              "bonus": 100
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["G", "U", "R", "K", "N", "L", "T", "O", "V"],
+              "level": 250,
+              "bonus": 250
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["E", "H", "M", "Q", "W"],
+              "level": 500,
+              "bonus": 500
+            },
+            {
+              "type": "FLEX",
+              "classes": ["G", "U", "R", "K", "N", "L", "T", "O", "V"],
+              "level": 600,
+              "bonus": 600
+            },
+            {
+              "type": "FLEX",
+              "classes": ["E", "H", "M", "Q", "W"],
+              "level": 700,
+              "bonus": 700
+            },
+            {
+              "type": "PREMIUM",
+              "classes": ["A", "P", "B", "J", "S", "Y"],
+              "level": 700,
+              "bonus": 700
+            },
+            {
+              "type": "PREMIUM",
+              "classes": ["D", "Z", "C"],
+              "level": 850,
+              "bonus": 850
+            },
+            {
+              "type": "PREMIUM FLEX",
+              "classes": ["A", "P", "B", "J", "S", "Y"],
+              "level": 1000,
+              "bonus": 1000
+            },
+            {
+              "type": "PREMIUM FLEX",
+              "classes": ["D", "Z", "C"],
+              "level": 1200,
+              "bonus": 1200
+            }
+          ],
+          "SCANDINAVIA": [
+            {
+              "type": "LIGHT",
+              "classes": ["E", "H", "K", "L", "M", "N", "O", "Q", "R", "T", "U", "V", "W"],
+              "level": 100,
+              "bonus": 100
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["G", "U", "R", "K", "N", "L", "T", "O", "V"],
+              "level": 250,
+              "bonus": 250
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["E", "H", "M", "Q", "W"],
+              "level": 500,
+              "bonus": 500
+            },
+            {
+              "type": "FLEX",
+              "classes": ["G", "U", "R", "K", "N", "L", "T", "O", "V"],
+              "level": 600,
+              "bonus": 600
+            },
+            {
+              "type": "FLEX",
+              "classes": ["E", "H", "M", "Q", "W"],
+              "level": 700,
+              "bonus": 700
+            },
+            {
+              "type": "BUSINESS",
+              "classes": ["A", "P", "B", "J", "S", "Y"],
+              "level": 1000,
+              "bonus": 1000
+            },
+            {
+              "type": "BUSINESS",
+              "classes": ["D", "Z", "C"],
+              "level": 1200,
+              "bonus": 1200
+            },
+            {
+              "type": "BUSINESS FLEX",
+              "classes": ["A", "P", "B", "J", "S", "Y"],
+              "level": 1500,
+              "bonus": 1500
+            },
+            {
+              "type": "BUSINESS FLEX",
+              "classes": ["D", "Z", "C"],
+              "level": 2000,
+              "bonus": 2000
+            }
+          ],
+          "EUROPE": [
+            {
+              "type": "LIGHT",
+              "classes": ["E", "H", "K", "L", "M", "N", "O", "Q", "R", "T", "U", "V", "W"],
+              "level": 100,
+              "bonus": 100
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["G", "K", "L", "N", "O", "R", "T", "U", "V"],
+              "level": 500,
+              "bonus": 500
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["E", "H", "M", "Q", "W"],
+              "level": 1000,
+              "bonus": 1000
+            },
+            {
+              "type": "FLEX",
+              "classes": ["G", "K", "L", "N", "O", "R", "T", "U", "V"],
+              "level": 1200,
+              "bonus": 1200
+            },
+            {
+              "type": "FLEX",
+              "classes": ["E", "H", "M", "Q", "W"],
+              "level": 1400,
+              "bonus": 1400
+            },
+            {
+              "type": "BUSINESS",
+              "classes": ["A", "P", "B", "J", "S", "Y"],
+              "level": 1500,
+              "bonus": 1500
+            },
+            {
+              "type": "BUSINESS",
+              "classes": ["D", "Z", "C"],
+              "level": 1700,
+              "bonus": 1700
+            },
+            {
+              "type": "BUSINESS FLEX",
+              "classes": ["A", "P"],
+              "level": 2000,
+              "bonus": 2000
+            },
+            {
+              "type": "BUSINESS FLEX",
+              "classes": ["B", "J", "S", "Y"],
+              "level": 2500,
+              "bonus": 2500
+            },
+            {
+              "type": "BUSINESS FLEX",
+              "classes": ["D", "Z", "C"],
+              "level": 3000,
+              "bonus": 3000
+            }
+          ],
+          "INTER_1": [
+            {
+              "type": "LIGHT",
+              "classes": ["E", "H", "K", "L", "M", "N", "O", "Q", "R", "T", "U", "V", "W"],
+              "level": 200,
+              "bonus": 200
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["O", "T"],
+              "level": 400,
+              "bonus": 400
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["E", "G", "H", "K", "L", "M", "N", "Q", "R", "U", "V", "W"],
+              "level": 1600,
+              "bonus": 1600
+            },
+            {
+              "type": "FLEX",
+              "classes": ["O", "T"],
+              "level": 1000,
+              "bonus": 1000
+            },
+            {
+              "type": "FLEX",
+              "classes": ["E", "H", "K", "L", "M", "N", "Q", "R", "U", "V", "W"],
+              "level": 4000,
+              "bonus": 4000
+            },
+            {
+              "type": "PREMIUM",
+              "classes": ["A", "B", "P", "S", "Y"],
+              "level": 4000,
+              "bonus": 4000
+            },
+            {
+              "type": "PREMIUM FLEX",
+              "classes": ["A", "B", "P", "S", "Y"],
+              "level": 5000,
+              "bonus": 5000
+            },
+            {
+              "type": "BUSINESS",
+              "classes": ["C", "D", "J", "Z"],
+              "level": 6000,
+              "bonus": 6000
+            },
+            {
+              "type": "BUSINESS FLEX",
+              "classes": ["C", "D", "J", "Z"],
+              "level": 9000,
+              "bonus": 9000
+            }
+          ],
+          "INTER_2": [
+            {
+              "type": "LIGHT",
+              "classes": ["E", "H", "K", "L", "M", "N", "O", "Q", "R", "T", "U", "V", "W"],
+              "level": 200,
+              "bonus": 200
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["O", "T"],
+              "level": 500,
+              "bonus": 500
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["E", "G", "H", "K", "L", "M", "N", "Q", "R", "U", "V", "W"],
+              "level": 2000,
+              "bonus": 2000
+            },
+            {
+              "type": "FLEX",
+              "classes": ["O", "T"],
+              "level": 1250,
+              "bonus": 1250
+            },
+            {
+              "type": "FLEX",
+              "classes": ["E", "H", "K", "L", "M", "N", "Q", "R", "U", "V", "W"],
+              "level": 5000,
+              "bonus": 5000
+            },
+            {
+              "type": "PREMIUM",
+              "classes": ["A", "B", "P", "S", "Y"],
+              "level": 5000,
+              "bonus": 5000
+            },
+            {
+              "type": "PREMIUM FLEX",
+              "classes": ["A", "B", "P", "S", "Y"],
+              "level": 7000,
+              "bonus": 7000
+            },
+            {
+              "type": "BUSINESS",
+              "classes": ["C", "D", "J", "Z"],
+              "level": 7500,
+              "bonus": 7500
+            },
+            {
+              "type": "BUSINESS FLEX",
+              "classes": ["C", "D", "J", "Z"],
+              "level": 10000,
+              "bonus": 10000
+            }
+          ],
+          "INTER_3": [
+            {
+              "type": "LIGHT",
+              "classes": ["E", "H", "K", "L", "M", "N", "O", "Q", "R", "T", "U", "V", "W"],
+              "level": 240,
+              "bonus": 240
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["O", "T"],
+              "level": 600,
+              "bonus": 600
+            },
+            {
+              "type": "STANDARD",
+              "classes": ["E", "G", "H", "K", "L", "M", "N", "Q", "R", "U", "V", "W"],
+              "level": 2400,
+              "bonus": 2000
+            },
+            {
+              "type": "FLEX",
+              "classes": ["O", "T"],
+              "level": 1500,
+              "bonus": 1500
+            },
+            {
+              "type": "FLEX",
+              "classes": ["E", "H", "K", "L", "M", "N", "Q", "R", "U", "V", "W"],
+              "level": 6000,
+              "bonus": 6000
+            },
+            {
+              "type": "PREMIUM",
+              "classes": ["A", "B", "P", "S", "Y"],
+              "level": 6000,
+              "bonus": 6000
+            },
+            {
+              "type": "PREMIUM FLEX",
+              "classes": ["A", "B", "P", "S", "Y"],
+              "level": 7500,
+              "bonus": 7500
+            },
+            {
+              "type": "BUSINESS",
+              "classes": ["C", "D", "J", "Z"],
+              "level": 9000,
+              "bonus": 9000
+            },
+            {
+              "type": "BUSINESS FLEX",
+              "classes": ["C", "D", "J", "Z"],
+              "level": 12000,
+              "bonus": 12000
+            }
+          ]
+        },
+        "tableRules": [
+          {
+            "use": "DOMESTIC",
+            "countries": ["NO"],
+            "matchMode": "BOTH"
+          },
+          {
+            "use": "DOMESTIC",
+            "countries": ["SE"],
+            "matchMode": "BOTH"
+          },
+          {
+            "use": "DOMESTIC",
+            "countries": ["DK"],
+            "matchMode": "BOTH"
+          },
+          {
+            "use": "SCANDINAVIA",
+            "countries": ["NO", "SE", "DK"],
+            "matchMode": "BOTH",
+            "replaceType": {
+              "PREMIUM": "BUSINESS",
+              "PREMIUM FLEX": "BUSINESS"
+            }
+          },
+          {
+            "use": "INTER_1",
+            "airports": ["BOS", "EWR", "JFK", "YYZ"],
+            "matchMode": "ANY"
+          },
+          {
+            "use": "INTER_2",
+            "airports": ["PEK", "PKX", "ATL", "ORD", "IAD"],
+            "matchMode": "ANY"
+          },
+          {
+            "use": "INTER_3",
+            "airports": ["BKK", "ICN", "HND", "NRT", "MIA", "LAX", "SFO", "SEA"],
+            "matchMode": "ANY"
+          },
+          {
+            "use": "EUROPE",
+            "regions": ["EU"],
+            "matchMode": "BOTH",
+            "replaceType": {
+              "PREMIUM": "BUSINESS",
+              "PREMIUM FLEX": "BUSINESS"
+            }
+          },
+          {
+            "use": "DOMESTIC",
+            "maxDist": 300
+          },
+          {
+            "use": "SCANDINAVIA",
+            "maxDist": 800,
+            "replaceType": {
+              "PREMIUM": "BUSINESS",
+              "PREMIUM FLEX": "BUSINESS"
+            }
+          },
+          {
+            "use": "INTER_1",
+            "minDist": 3000
+          },
+          {
+            "use": "EUROPE",
+            "replaceType": {
+              "PREMIUM": "BUSINESS",
+              "PREMIUM FLEX": "BUSINESS"
+            }
+          }
+        ]
+      },
+      "SKYTEAM": {
+        "level": true,
+        "table": [
+          {
+            "classes": ["J", "Z", "C", "D"],
+            "Md": 100,
+            "Mc": 100
+          },
+          {
+            "classes": ["Y", "S", "B", "P", "A"],
+            "Md": 100,
+            "Mc": 25
+          },
+          {
+            "classes": ["E", "M", "H", "Q", "V", "W"],
+            "Md": 100,
+            "Mc": 0
+          },
+          {
+            "classes": ["U", "R", "K", "N", "L"],
+            "Md": 40,
+            "Mc": 0
+          },
+          {
+            "classes": ["T", "O"],
+            "Md": 10,
+            "Mc": 0
+          }
+        ]
+      }
+    }
+  }
+}
